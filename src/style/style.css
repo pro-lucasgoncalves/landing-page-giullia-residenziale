@@ -262,3 +262,30 @@
   color: var(--branco);
   line-height: 1.7;
 }
+
+.conteudo-principal .mapa {
+  background-image: url(../images/bg-01.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 50px 0;
+  gap: 50px;
+}
+
+.conteudo-principal .mapa .texto {
+  max-width: 975px;
+  font-family: "MazzardH-Regular";
+  color: var(--amarelo-claro);
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.conteudo-principal .mapa .google-maps {
+  max-width: 600px;
+}
