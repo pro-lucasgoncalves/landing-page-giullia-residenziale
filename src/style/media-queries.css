@@ -1,0 +1,86 @@
+@media (max-width: 768px) {
+  /* CABEÇALHO */
+
+  .cabecalho .conteudo {
+    padding-top: 50px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .cabecalho .conteudo .imagem,
+  .cabecalho .conteudo .informacoes {
+    width: 100%;
+  }
+
+  .cabecalho .conteudo .informacoes {
+    padding: 6.4%;
+  }
+
+  /* CABEÇALHO */
+
+  /* CONTEÚDO-TEXTO */
+
+  .conteudo-principal .conteudo-texto {
+    padding: 50px 0;
+  }
+
+  .conteudo-principal .conteudo-texto .titulo,
+  .conteudo-principal .conteudo-texto .paragrafo {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .conteudo-principal .conteudo-texto .titulo {
+    max-width: 700px;
+    margin-bottom: 50px;
+  }
+
+  .conteudo-principal .conteudo-texto .paragrafo {
+    max-width: 830px;
+    text-align: center;
+  }
+
+  /* CONTEÚDO-TEXTO */
+
+  /* DIFERENCIAIS */
+
+  .conteudo-principal .diferenciais .topicos {
+    padding: 0 25px;
+  }
+
+  /* DIFERENCIAIS */
+
+  /* PLANTAS */
+
+  .conteudo-principal .plantas .planta .prancheta {
+    padding: 0 25px;
+  }
+
+  /* PLANTAS */
+}
+
+@media (max-width: 1148px) {
+  /* LOCALIZACAO */
+
+  .conteudo-principal .localizacao {
+    background-image: url(../images/bg-02.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding-bottom: 50px;
+  }
+
+  .conteudo-principal .localizacao .imagem-localizacao {
+    min-width: 100%;
+  }
+
+  .conteudo-principal .localizacao .caixa-de-texto {
+    max-width: 90%;
+    border-top: none;
+    border-bottom-right-radius: 60px;
+  }
+
+  /* LOCALIZAÇÃO */
+}

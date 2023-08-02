@@ -1,0 +1,264 @@
+/* CABEÇALHO */
+
+.cabecalho .conteudo {
+  background-image: url(../images/bg-02.png);
+  background-position: 250px;
+  background-size: cover;
+
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalho .conteudo .imagem {
+  width: 57%;
+}
+
+.cabecalho .conteudo .informacoes {
+  width: 43%;
+  padding: 0 4.4%;
+  font-family: "MazzardH-Regular";
+}
+
+.cabecalho .conteudo .informacoes .texto,
+.cabecalho .conteudo .informacoes .titulo {
+  color: var(--amarelo-claro);
+}
+
+.cabecalho .conteudo .informacoes .titulo {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.cabecalho .conteudo .informacoes .texto {
+  margin-bottom: 10px;
+}
+
+/* CABEÇALHO */
+
+/* CONTEÚDO-TEXTO */
+
+.conteudo-principal .conteudo-texto {
+  background-image: url(../images/bg-01.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.conteudo-principal .conteudo-texto .titulo,
+.conteudo-principal .conteudo-texto .paragrafo {
+  width: 50%;
+}
+
+.conteudo-principal .conteudo-texto .titulo {
+  font-family: "Florence-Regular";
+  color: var(--amarelo-claro);
+  font-size: 3.5rem;
+  padding: 0 50px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.conteudo-principal .conteudo-texto .paragrafo {
+  font-family: "MazzardH-Regular";
+  color: var(--branco);
+  font-size: 2.4rem;
+  padding: 0 65px;
+}
+
+/* CONTEÚDO-TEXTO */
+
+/* LOCALIZAÇÃO */
+
+.conteudo-principal .localizacao {
+  background-image: url(../images/bg-02.png);
+  background-position: 250px;
+  background-size: cover;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.conteudo-principal .localizacao .imagem-localizacao {
+  max-width: 73%;
+}
+
+.conteudo-principal .localizacao .caixa-de-texto {
+  max-width: 25%;
+  border: 2px solid var(--amarelo);
+  border-left: none;
+  border-bottom-right-radius: 60px;
+}
+
+.conteudo-principal .localizacao .caixa-de-texto .texto {
+  text-transform: uppercase;
+  font-family: "MazzardH-Regular";
+  color: var(--amarelo-claro);
+  font-size: 2.4rem;
+  padding: 20px 50px;
+}
+
+/* LOCALIZAÇÃO */
+
+/* DIFERENCIAIS */
+
+.conteudo-principal .diferenciais {
+  background-image: url(../images/bg-01.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.conteudo-principal .diferenciais .titulo {
+  font-family: "Florence-Regular";
+  font-size: 3.5rem;
+  color: var(--amarelo-claro);
+  margin-bottom: 50px;
+}
+
+.conteudo-principal .diferenciais .topicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.conteudo-principal .diferenciais .topicos .topico {
+  border-radius: 15px;
+  background-color: #00000060;
+  max-width: 425px;
+}
+
+.conteudo-principal .diferenciais .topicos .topico .caixa-de-texto {
+  padding: 12px;
+  margin: 15px;
+  border-left: 4px solid var(--amarelo);
+}
+
+.conteudo-principal .diferenciais .topicos .topico .caixa-de-texto .subtitulo,
+.conteudo-principal .diferenciais .topicos .topico .caixa-de-texto .texto {
+  font-family: "MazzardH-Regular";
+  color: var(--branco);
+}
+
+.conteudo-principal
+  .diferenciais
+  .topicos
+  .topico
+  .caixa-de-texto
+  .container-subtitulo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.conteudo-principal
+  .diferenciais
+  .topicos
+  .topico
+  .caixa-de-texto
+  .container-subtitulo
+  .subtitulo {
+  letter-spacing: 2px;
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.conteudo-principal
+  .diferenciais
+  .topicos
+  .topico
+  .caixa-de-texto
+  .container-subtitulo
+  .icone {
+  width: 48px;
+}
+
+.conteudo-principal .diferenciais .topicos .topico .caixa-de-texto .texto {
+  margin-top: 7.5px;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* DIFERENCIAIS */
+
+/* PLANTAS */
+
+.conteudo-principal .plantas {
+  background-image: url(../images/bg-02.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  gap: 50px;
+}
+
+.conteudo-principal .plantas .titulo {
+  text-align: center;
+  font-family: "MazzardH-Regular";
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 28px;
+  color: var(--amarelo-claro);
+}
+
+.conteudo-principal .plantas .planta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.conteudo-principal .plantas .planta .caixa-de-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.conteudo-principal .plantas .planta .caixa-de-texto .comodos {
+  background-color: var(--amarelo);
+  padding: 15px 90px;
+}
+
+.conteudo-principal .plantas .planta .caixa-de-texto .qtd-e-tamanho {
+  font-family: "MazzardH-Regular";
+  padding: 20px 40px;
+}
+
+.conteudo-principal
+  .plantas
+  .planta
+  .caixa-de-texto
+  .qtd-e-tamanho
+  .qtd-quartos {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 7.5px;
+  color: var(--branco);
+}
+
+.conteudo-principal .plantas .planta .caixa-de-texto .qtd-e-tamanho .metragens {
+  font-size: 2.5rem;
+  color: var(--branco);
+}
+
+.conteudo-principal .plantas .planta .caixa-de-texto .comodos .comodo {
+  font-family: "MazzardH-Regular";
+  color: var(--branco);
+  line-height: 1.7;
+}
