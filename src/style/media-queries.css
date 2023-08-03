@@ -57,6 +57,10 @@
     padding: 0 25px;
   }
 
+  .conteudo-principal .plantas .planta .caixa-de-texto .comodos {
+    padding: 15px 70px;
+  }
+
   /* PLANTAS */
 }
 
@@ -83,4 +87,54 @@
   }
 
   /* LOCALIZAÇÃO */
+}
+
+@media (max-width: 375px) {
+  .cabecalho .conteudo .informacoes .titulo {
+    font-size: 3rem;
+  }
+
+  .conteudo-principal .conteudo-texto .paragrafo {
+    font-size: 1.8rem;
+  }
+
+  .conteudo-principal .localizacao .caixa-de-texto .texto {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    padding: 28px 15px;
+  }
+
+  .conteudo-principal
+    .diferenciais
+    .topicos
+    .topico
+    .caixa-de-texto
+    .container-subtitulo
+    .subtitulo {
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .conteudo-principal
+    .diferenciais
+    .topicos
+    .topico
+    .caixa-de-texto
+    .container-subtitulo
+    .icone {
+    width: 33px;
+  }
+
+  .conteudo-principal .diferenciais .topicos .topico .caixa-de-texto .texto {
+    font-size: 1.3rem;
+  }
+
+  .conteudo-principal .plantas {
+    padding-bottom: 0;
+  }
+
+  .conteudo-principal .mapa .texto {
+    font-size: 1.8rem;
+  }
 }

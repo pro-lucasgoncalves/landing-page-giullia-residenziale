@@ -160,6 +160,7 @@
   .caixa-de-texto
   .container-subtitulo {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
 }
@@ -211,10 +212,8 @@
 
 .conteudo-principal .plantas .titulo {
   text-align: center;
-  font-family: "MazzardH-Regular";
-  font-size: 4rem;
-  font-weight: 400;
-  letter-spacing: 28px;
+  font-family: "Florence-Regular";
+  font-size: 3.5rem;
   color: var(--amarelo-claro);
 }
 
@@ -273,19 +272,15 @@
   flex-direction: column;
   align-items: center;
 
-  padding: 50px 0;
+  padding-top: 50px;
   gap: 50px;
 }
 
 .conteudo-principal .mapa .texto {
-  max-width: 975px;
+  max-width: 1000px;
   font-family: "MazzardH-Regular";
   color: var(--amarelo-claro);
   font-size: 2.2rem;
   text-align: center;
   padding: 0 25px;
-}
-
-.conteudo-principal .mapa .google-maps {
-  max-width: 600px;
 }
