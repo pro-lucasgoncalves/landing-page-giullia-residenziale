@@ -439,8 +439,8 @@
   align-items: center;
   justify-content: center;
   font-family: "MazzardH-Regular";
-  color: var(--amarelo);
-  border: 2px solid var(--amarelo);
+  color: var(--amarelo-claro);
+  border: 2px solid var(--amarelo-claro);
   background-color: var(--preto);
   padding: 15px;
   width: 280px;
@@ -454,9 +454,9 @@
 }
 
 .conteudo-principal .mapa .apps a:hover {
-  background-color: var(--amarelo);
+  background-color: var(--amarelo-claro);
   color: var(--preto);
-  border-color: var(--amarelo);
+  border-color: var(--amarelo-claro);
 }
 
 /* RODAPÉ */
