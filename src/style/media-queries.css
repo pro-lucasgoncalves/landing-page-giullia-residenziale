@@ -46,7 +46,7 @@
   /* DIFERENCIAIS */
 
   .conteudo-principal .diferenciais .topicos {
-    padding: 0 25px;
+    padding: 0 30px;
   }
 
   /* DIFERENCIAIS */
@@ -54,7 +54,7 @@
   /* PLANTAS */
 
   .conteudo-principal .plantas .planta .prancheta {
-    padding: 0 25px;
+    padding: 0 30px;
   }
 
   .conteudo-principal .plantas .planta .caixa-de-texto .comodos {
@@ -62,6 +62,30 @@
   }
 
   /* PLANTAS */
+
+  /* EMPREENDIMENTO */
+
+  .conteudo-principal .empreendimento .slider {
+    height: 225px;
+  }
+
+  .conteudo-principal .empreendimento .slider .btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1.6rem;
+  }
+
+  .conteudo-principal .empreendimento .slider .btn-prev {
+    top: 42%;
+    padding: 2px 1px 0 0;
+  }
+  
+  .conteudo-principal .empreendimento .slider .btn-next {
+    top: 42%;
+    padding: 2px 0 0 1px;
+  }
+
+  /* EMPREENDIMENTO */
 }
 
 @media (max-width: 1148px) {
@@ -117,30 +141,6 @@
     padding: 28px 15px;
   }
 
-  .conteudo-principal
-    .diferenciais
-    .topicos
-    .topico
-    .container-subtitulo
-    .subtitulo {
-    letter-spacing: 2px;
-    font-size: 1.8rem;
-    font-weight: 400;
-  }
-
-  .conteudo-principal
-    .diferenciais
-    .topicos
-    .topico
-    .container-subtitulo
-    .icone {
-    width: 33px;
-  }
-
-  .conteudo-principal .diferenciais .topicos .topico .caixa-de-texto .texto {
-    font-size: 1.3rem;
-  }
-
   .conteudo-principal .plantas {
     padding-bottom: 0;
   }
@@ -148,6 +148,31 @@
   .conteudo-principal .mapa .texto {
     font-size: 1.8rem;
   }
+}
+
+@media (max-width: 450px) {
+  .conteudo-principal
+  .diferenciais
+  .topicos
+  .topico
+  .container-subtitulo
+  .icone {
+  width: 33px;
+}
+
+.conteudo-principal
+  .diferenciais
+  .topicos
+  .topico
+  .container-subtitulo
+  .subtitulo {
+  letter-spacing: 2px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.conteudo-principal .diferenciais .topicos .topico .caixa-de-texto .texto {
+  font-size: 1.8rem;
+}
 }
 
 @media (max-width: 825px) {
