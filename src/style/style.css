@@ -1,6 +1,29 @@
-/* CABEÇALHO */
+/* HEADER */
 
-.cabecalho .conteudo {
+.header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  min-height: 7.5rem;
+}
+
+.header .logo {
+  font-weight: 700;
+  font-size: 2.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.header .logo:hover {
+  color: var(--amarelo)
+}
+
+/* HEADER */
+
+
+/* HOME */
+
+.home .conteudo {
   background-image: url(../images/bg-02.png);
   background-position: 250px;
   background-size: cover;
@@ -11,31 +34,31 @@
   justify-content: space-between;
 }
 
-.cabecalho .conteudo .imagem {
-  width: 57%;
+.home .conteudo .imagem {
+  width: 50%;
 }
 
-.cabecalho .conteudo .informacoes {
-  width: 43%;
+.home .conteudo .informacoes {
+  width: 50%;
   padding: 0 4.4%;
   font-family: "MazzardH-Regular";
 }
 
-.cabecalho .conteudo .informacoes .texto,
-.cabecalho .conteudo .informacoes .titulo {
+.home .conteudo .informacoes .texto,
+.home .conteudo .informacoes .titulo {
   color: var(--amarelo-claro);
 }
 
-.cabecalho .conteudo .informacoes .titulo {
+.home .conteudo .informacoes .titulo {
   font-size: 5rem;
   margin-bottom: 20px;
 }
 
-.cabecalho .conteudo .informacoes .texto {
+.home .conteudo .informacoes .texto {
   margin-bottom: 10px;
 }
 
-/* CABEÇALHO */
+/* HOME */
 
 /* CONTEÚDO-TEXTO */
 
@@ -299,7 +322,7 @@
   margin: 0 15px;
 }
 
-.conteudo-principal .empreendimento .slide {
+.conteudo-principal .empreendimento .slider .slide {
   width: 100%;
   max-width: 800px;
   height: 100%;
@@ -307,13 +330,13 @@
   transition: all 0.5s;
 }
 
-.conteudo-principal .empreendimento .slide img {
+.conteudo-principal .empreendimento .slider .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.conteudo-principal .empreendimento .btn {
+.conteudo-principal .empreendimento .slider .btn {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -327,17 +350,17 @@
   font-size: 2rem;
   transition: 0.1s ease-in-out;
 }
-.conteudo-principal .empreendimento .btn:active {
+.conteudo-principal .empreendimento .slider .btn:active {
   transform: scale(1.1);
   background-color: var(--amarelo-claro);
 }
-.conteudo-principal .empreendimento .btn-prev {
+.conteudo-principal .empreendimento .slider .btn-prev {
   top: 45%;
   left: 2%;
   padding: 2px 2px 0 0;
 }
 
-.conteudo-principal .empreendimento .btn-next {
+.conteudo-principal .empreendimento .slider .btn-next {
   top: 45%;
   right: 2%;
   padding: 2px 0 0 2px;
@@ -392,7 +415,7 @@
   gap: 20px;
 }
 
-.rodape .navegacao .logos .logo {
+.logo {
   width: 250px;
 }
 

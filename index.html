@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="src/style/font-face.css" />
     <link rel="stylesheet" href="src/style/style.css" />
     <link rel="stylesheet" href="src/style/media-queries.css" />
+    <link rel="stylesheet" href="src/style/menu.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -20,43 +21,61 @@
     <title>Giullia Residenziale</title>
   </head>
   <body>
-    <header class="cabecalho">
-      <nav class="navegacao">
-        <ul class="menu">
-            <li class="item">
-                <a href="#projetos">Projetos</a>
-            </li>
-            <li class="item">
-                <a href="#quem-somos">Quem Somos</a>
-            </li>
-            <li class="item">
-                <a href="#contato">Contato</a>
-            </li>
-        </ul>
-    </nav>
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html">
+          <img src="src/images/grb-logo.png" alt="" class="logo" />
+        </a>
+
+        <nav>
+          <!-- Menu Hamburguer -->
+          <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer" />
+
+          <label for="menu-hamburguer">
+            <div class="menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
+
+          <ul class="links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#plantas">Plantas</a></li>
+            <li><a href="#empreendimento">Empreendimento</a></li>
+            <li><a href="#mapa">Mapa</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="home" id="home">
       <div class="conteudo">
         <img src="src/images/edificio.png" alt="Edifício" class="imagem" />
         <div class="informacoes">
           <p class="texto">Bem-vindo à sua nova vida.</p>
           <h1 class="titulo">Bem-vindo ao:</h1>
-          <img src="./src/images/giullia-logo.png" alt="Logo" class="logo" />
+          <img
+            src="./src/images/giullia-logo.png"
+            alt="Logo"
+            class="giullia-logo"
+          />
         </div>
       </div>
-    </header>
-    <main class="conteudo-principal">
+    </section>
+    <main class="conteudo-principal" id="sobre">
       <section class="conteudo-texto">
         <h2 class="titulo">
           É aqui que você vai ver e curtir a vida de um novo jeito.
         </h2>
         <p class="paragrafo">
           Idealizado pela GRB Incorporação e Construção, perfeito para quem
-          prioriza conforto e qualidade de vida. O Giullia Residenziale
+          prioriza conforto e qualidade de vida.<br />O Giullia Residenziale
           proporciona mais segurança e tranquilidade para o seu dia a dia. Fique
           em sintonia com a natureza e a modernidade e transforme o seu jeito de
           viver.
         </p>
       </section>
-      <section class="localizacao">
+      <section class="localizacao" id="localizacao">
         <img
           src="src/images/localizacao.png"
           alt="Localização"
@@ -70,8 +89,7 @@
           </p>
         </div>
       </section>
-      <!-- <section class="empreendimento"></section> -->
-      <section class="diferenciais">
+      <section class="diferenciais" id="diferenciais">
         <h1 class="titulo">Diferenciais</h1>
         <div class="topicos">
           <div class="topico">
@@ -117,7 +135,7 @@
           </div>
         </div>
       </section>
-      <section class="plantas">
+      <section class="plantas" id="plantas">
         <h2 class="titulo">Plantas</h2>
         <div class="planta">
           <img
@@ -169,48 +187,57 @@
           </div>
         </div>
       </section>
-      <section class="empreendimento">
+      <section class="empreendimento" id="empreendimento">
         <div class="slider">
           <!-- slide 1 -->
           <div class="slide">
             <img src="src/images/guarita.jpg" alt="" />
           </div>
-    
+
           <!-- slide 2 -->
           <div class="slide">
             <img src="src/images/salao-de-festas.jpg" alt="" />
           </div>
-    
+
           <!-- slide 3 -->
           <div class="slide">
             <img src="src/images/quadra.jpg" alt="" />
           </div>
-    
+
           <!-- slide 4 -->
           <div class="slide">
             <img src="src/images/sala-de-estar.jpg" alt="" />
           </div>
-    
+
           <!-- slide 5 -->
           <div class="slide">
             <img src="src/images/suite-master.jpg" alt="" />
           </div>
-    
+
           <!-- slide 6 -->
           <div class="slide">
             <img src="src/images/varanda.jpg" alt="" />
           </div>
-    
+
           <!-- Control buttons -->
-          <button class="btn btn-next"><i class="fas fa-arrow-right"></i></button>
-          <button class="btn btn-prev"><i class="fas fa-arrow-left"></i></button>
+          <button class="btn btn-next">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          <button class="btn btn-prev">
+            <i class="fas fa-arrow-left"></i>
+          </button>
         </div>
         <div class="conteudo">
           <h2 class="titulo">Empreendimento</h2>
-          <p class="texto">Viva com mais segurança, lazer e comodidades: o Parque Mosaico é referência em infraestrutura e paisagismo e foi criado para proporcionar maior convívio e interação entre você, sua família e seus amigos.</p>
+          <p class="texto">
+            Viva com mais segurança, lazer e comodidades: o Parque Mosaico é
+            referência em infraestrutura e paisagismo e foi criado para
+            proporcionar maior convívio e interação entre você, sua família e
+            seus amigos.
+          </p>
         </div>
       </section>
-      <section class="mapa">
+      <section class="mapa" id="mapa">
         <p class="texto">
           O Giullia Residenziale está em uma região que é considerada uma das
           mais bonitas da cidade que, além de proporcionar qualidade de vida e
@@ -252,7 +279,11 @@
           <a href="#" class="rede-social">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="https://www.instagram.com/grb_engenharia/" class="rede-social" target="_blank">
+          <a
+            href="https://www.instagram.com/grb_engenharia/"
+            class="rede-social"
+            target="_blank"
+          >
             <i class="fab fa-instagram"></i>
           </a>
           <a href="#" class="rede-social">

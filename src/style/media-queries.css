@@ -1,19 +1,19 @@
 @media (max-width: 768px) {
   /* CABEÇALHO */
 
-  .cabecalho .conteudo {
+  .home .conteudo {
     padding-top: 50px;
 
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  .cabecalho .conteudo .imagem,
-  .cabecalho .conteudo .informacoes {
+  .home .conteudo .imagem,
+  .home .conteudo .informacoes {
     width: 100%;
   }
 
-  .cabecalho .conteudo .informacoes {
+  .home .conteudo .informacoes {
     padding: 6.4%;
   }
 
@@ -98,7 +98,7 @@
 }
 
 @media (max-width: 375px) {
-  .cabecalho .conteudo .informacoes .titulo {
+  .home .conteudo .informacoes .titulo {
     font-size: 3rem;
   }
 
