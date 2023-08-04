@@ -427,6 +427,38 @@
   padding: 0 25px;
 }
 
+.conteudo-principal .mapa .apps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.conteudo-principal .mapa .apps a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "MazzardH-Regular";
+  color: var(--amarelo);
+  border: 2px solid var(--amarelo);
+  background-color: var(--preto);
+  padding: 15px;
+  width: 280px;
+  transition: 0.3s ease-in-out;
+  font-size: 2.2rem;
+}
+
+.conteudo-principal .mapa .apps a .icone {
+  width: 50px;
+  font-size: 4rem;
+}
+
+.conteudo-principal .mapa .apps a:hover {
+  background-color: var(--amarelo);
+  color: var(--preto);
+  border-color: var(--amarelo);
+}
+
 /* RODAPÉ */
 
 .rodape {
