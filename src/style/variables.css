@@ -1,5 +1,7 @@
 :root {
     --amarelo: #d18a2b;
     --amarelo-claro: #f2c54f;
-    --branco: #ffffff
+    --branco: #ffffff;
+    --preto: #000000;
+    --preto-translucido: #00000060
 }

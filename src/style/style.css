@@ -137,7 +137,7 @@
 
 .conteudo-principal .diferenciais .topicos .topico {
   border-radius: 15px;
-  background-color: #00000060;
+  background-color: var(--preto-translucido);
   max-width: 425px;
 }
 
@@ -147,29 +147,29 @@
   border-left: 4px solid var(--amarelo);
 }
 
-.conteudo-principal .diferenciais .topicos .topico .caixa-de-texto .subtitulo,
+.conteudo-principal
+  .diferenciais
+  .topicos
+  .topico
+  .container-subtitulo
+  .subtitulo,
 .conteudo-principal .diferenciais .topicos .topico .caixa-de-texto .texto {
   font-family: "MazzardH-Regular";
   color: var(--branco);
 }
 
-.conteudo-principal
-  .diferenciais
-  .topicos
-  .topico
-  .caixa-de-texto
-  .container-subtitulo {
+.conteudo-principal .diferenciais .topicos .topico .container-subtitulo {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
+  padding: 15px 15px 0 20px;
 }
 
 .conteudo-principal
   .diferenciais
   .topicos
   .topico
-  .caixa-de-texto
   .container-subtitulo
   .subtitulo {
   letter-spacing: 2px;
@@ -178,18 +178,11 @@
   text-transform: uppercase;
 }
 
-.conteudo-principal
-  .diferenciais
-  .topicos
-  .topico
-  .caixa-de-texto
-  .container-subtitulo
-  .icone {
+.conteudo-principal .diferenciais .topicos .topico .container-subtitulo .icone {
   width: 48px;
 }
 
 .conteudo-principal .diferenciais .topicos .topico .caixa-de-texto .texto {
-  margin-top: 7.5px;
   font-size: 2rem;
   line-height: 1.5;
 }
@@ -262,8 +255,97 @@
   line-height: 1.7;
 }
 
-.conteudo-principal .mapa {
+/* PLANTAS */
+
+/* EMPREENDIMENTO */
+
+.conteudo-principal .empreendimento {
   background-image: url(../images/bg-01.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  gap: 25px;
+}
+
+.conteudo-principal .empreendimento .conteudo .titulo {
+  text-align: center;
+  font-family: "Florence-Regular";
+  font-size: 3.5rem;
+  color: var(--amarelo-claro);
+  padding-bottom: 25px;
+}
+
+.conteudo-principal .empreendimento .conteudo .texto {
+  max-width: 310px;
+  font-family: "MazzardH-Regular";
+  font-size: 2.2rem;
+  line-height: 1.5;
+  color: var(--branco);
+}
+
+.conteudo-principal .empreendimento .slider {
+  width: 100%;
+  max-width: 768px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 0 15px;
+}
+
+.conteudo-principal .empreendimento .slide {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.conteudo-principal .empreendimento .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.conteudo-principal .empreendimento .btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: var(--amarelo);
+  color: var(--branco);
+  font-size: 2rem;
+  transition: 0.1s ease-in-out;
+}
+.conteudo-principal .empreendimento .btn:active {
+  transform: scale(1.1);
+  background-color: var(--amarelo-claro);
+}
+.conteudo-principal .empreendimento .btn-prev {
+  top: 45%;
+  left: 2%;
+  padding: 2px 2px 0 0;
+}
+
+.conteudo-principal .empreendimento .btn-next {
+  top: 45%;
+  right: 2%;
+  padding: 2px 0 0 2px;
+}
+/* EMPREENDIMENTO */
+
+.conteudo-principal .mapa {
+  background-image: url(../images/bg-02.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -284,3 +366,65 @@
   text-align: center;
   padding: 0 25px;
 }
+
+/* RODAPÉ */
+
+.rodape {
+  background-color: var(--preto);
+  padding: 40px 0 20px 0;
+}
+
+.rodape .navegacao {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.rodape .navegacao .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.rodape .navegacao .logos .logo {
+  width: 250px;
+}
+
+.rodape .redes-sociais {
+  display: flex;
+}
+
+.rodape .redes-sociais a {
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+  color: var(--amarelo);
+  border: 2px solid var(--amarelo);
+  background-color: var(--preto);
+  padding: 15px;
+  width: 65px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  font-size: 30px;
+}
+
+.rodape .redes-sociais a:hover {
+  background-color: var(--amarelo);
+  color: var(--preto);
+  border-color: var(--amarelo);
+}
+
+.rodape .copyright {
+  font-family: "MazzardH-Regular";
+  margin-top: 35px;
+  text-align: center;
+  color: var(--branco);
+}
+
+/* RODAPÉ */

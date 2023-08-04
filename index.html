@@ -13,10 +13,27 @@
     <link rel="stylesheet" href="src/style/font-face.css" />
     <link rel="stylesheet" href="src/style/style.css" />
     <link rel="stylesheet" href="src/style/media-queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <title>Giullia Residenziale</title>
   </head>
   <body>
     <header class="cabecalho">
+      <nav class="navegacao">
+        <ul class="menu">
+            <li class="item">
+                <a href="#projetos">Projetos</a>
+            </li>
+            <li class="item">
+                <a href="#quem-somos">Quem Somos</a>
+            </li>
+            <li class="item">
+                <a href="#contato">Contato</a>
+            </li>
+        </ul>
+    </nav>
       <div class="conteudo">
         <img src="src/images/edificio.png" alt="Edifício" class="imagem" />
         <div class="informacoes">
@@ -29,7 +46,7 @@
     <main class="conteudo-principal">
       <section class="conteudo-texto">
         <h2 class="titulo">
-          É daqui que você vai ver e curtir a vida de um novo jeito.
+          É aqui que você vai ver e curtir a vida de um novo jeito.
         </h2>
         <p class="paragrafo">
           Idealizado pela GRB Incorporação e Construção, perfeito para quem
@@ -58,15 +75,11 @@
         <h1 class="titulo">Diferenciais</h1>
         <div class="topicos">
           <div class="topico">
+            <div class="container-subtitulo">
+              <h2 class="subtitulo">Espaço delivery</h2>
+              <img src="src/images/delivery.png" alt="Delivery" class="icone" />
+            </div>
             <div class="caixa-de-texto">
-              <div class="container-subtitulo">
-                <h2 class="subtitulo">Espaço delivery</h2>
-                <img
-                  src="src/images/delivery.png"
-                  alt="Delivery"
-                  class="icone"
-                />
-              </div>
               <p class="texto">
                 Espaço exclusivo destinado a entrega de pedidos feitos pelos
                 moradores.<br /><br /><br />
@@ -74,11 +87,11 @@
             </div>
           </div>
           <div class="topico">
+            <div class="container-subtitulo">
+              <h2 class="subtitulo">Vaga para Uber</h2>
+              <img src="src/images/uber.png" alt="Uber" class="icone" />
+            </div>
             <div class="caixa-de-texto">
-              <div class="container-subtitulo">
-                <h2 class="subtitulo">Vaga para Uber</h2>
-                <img src="src/images/uber.png" alt="Uber" class="icone" />
-              </div>
               <p class="texto">
                 Vagas exclusivas destinadas a embarque e desembarque de veículos
                 por aplicativo.<br /><br /><br />
@@ -86,15 +99,15 @@
             </div>
           </div>
           <div class="topico">
+            <div class="container-subtitulo">
+              <h2 class="subtitulo">Conectividade</h2>
+              <img
+                src="src/images/wifi.png"
+                alt="Conectividade"
+                class="icone"
+              />
+            </div>
             <div class="caixa-de-texto">
-              <div class="container-subtitulo">
-                <h2 class="subtitulo">Conectividade</h2>
-                <img
-                  src="src/images/wifi.png"
-                  alt="Conectividade"
-                  class="icone"
-                />
-              </div>
               <p class="texto">
                 Automação nos apartamentos, uma exclusividade Giulia
                 Residenziale. Apartamentos preparados para conectividade com
@@ -156,6 +169,47 @@
           </div>
         </div>
       </section>
+      <section class="empreendimento">
+        <div class="slider">
+          <!-- slide 1 -->
+          <div class="slide">
+            <img src="src/images/guarita.jpg" alt="" />
+          </div>
+    
+          <!-- slide 2 -->
+          <div class="slide">
+            <img src="src/images/salao-de-festas.jpg" alt="" />
+          </div>
+    
+          <!-- slide 3 -->
+          <div class="slide">
+            <img src="src/images/quadra.jpg" alt="" />
+          </div>
+    
+          <!-- slide 4 -->
+          <div class="slide">
+            <img src="src/images/sala-de-estar.jpg" alt="" />
+          </div>
+    
+          <!-- slide 5 -->
+          <div class="slide">
+            <img src="src/images/suite-master.jpg" alt="" />
+          </div>
+    
+          <!-- slide 6 -->
+          <div class="slide">
+            <img src="src/images/varanda.jpg" alt="" />
+          </div>
+    
+          <!-- Control buttons -->
+          <button class="btn btn-next"><i class="fas fa-arrow-right"></i></button>
+          <button class="btn btn-prev"><i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="conteudo">
+          <h2 class="titulo">Empreendimento</h2>
+          <p class="texto">Viva com mais segurança, lazer e comodidades: o Parque Mosaico é referência em infraestrutura e paisagismo e foi criado para proporcionar maior convívio e interação entre você, sua família e seus amigos.</p>
+        </div>
+      </section>
       <section class="mapa">
         <p class="texto">
           O Giullia Residenziale está em uma região que é considerada uma das
@@ -164,8 +218,51 @@
           serviços. O acesso também é facilitado por meio de vias importantes
           como a Av. do Turismo e a Av. Coronel Teixeira.
         </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d15936.387317112254!2d-60.069372!3d-3.068793!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM8KwMDQnMDIuNSJTIDYwwrAwMyc1Ny4yIlc!5e0!3m2!1spt-BR!2sbr!4v1691017738370!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d15936.387317112254!2d-60.069372!3d-3.068793!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM8KwMDQnMDIuNSJTIDYwwrAwMyc1Ny4yIlc!5e0!3m2!1spt-BR!2sbr!4v1691017738370!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
+    <footer class="rodape">
+      <nav class="navegacao">
+        <div class="logos">
+          <a href="#" class="logo">
+            <img
+              src="src/images/grb-logo.png"
+              alt="GRB Engenharia"
+              class="logo"
+            />
+          </a>
+          <a href="#" class="logo">
+            <img
+              src="src/images/giullia-logo.png"
+              alt="Giullia Residenziale"
+              class="logo"
+            />
+          </a>
+        </div>
+
+        <div class="redes-sociais">
+          <a href="#" class="rede-social">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/grb_engenharia/" class="rede-social" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="rede-social">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </nav>
+      <p class="copyright">© Todos os direitos reservados</p>
+    </footer>
+    <script src="src/script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
   </body>
 </html>
