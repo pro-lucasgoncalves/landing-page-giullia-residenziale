@@ -1,5 +1,39 @@
 /* HEADER */
 
+.header .topo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: none;
+  border: none;
+  color: var(--branco);
+}
+
+.header .topo .ancora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--amarelo);
+  color: var(--branco);
+  font-size: 1.8rem;
+  transition: 0.1s ease-in-out;
+}
+
+.header .topo .ancora:active {
+  transform: scale(1.1);
+  background-color: var(--amarelo-claro);
+}
+
 .header .header-container {
   display: flex;
   justify-content: space-between;
@@ -25,7 +59,7 @@
 /* HOME */
 
 .home .conteudo {
-  background-image: url(../images/bg-02.png);
+  background-image: url(../images/bg-02.jpg);
   background-position: 250px;
   background-size: cover;
 
@@ -64,7 +98,7 @@
 /* CONTEÚDO-TEXTO */
 
 .conteudo-principal .sobre {
-  background-image: url(../images/bg-01.png);
+  background-image: url(../images/bg-01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -101,7 +135,7 @@
 /* LOCALIZAÇÃO */
 
 .conteudo-principal .localizacao {
-  background-image: url(../images/bg-02.png);
+  background-image: url(../images/bg-02.jpg);
   background-position: 250px;
   background-size: cover;
 
@@ -134,7 +168,7 @@
 /* DIFERENCIAIS */
 
 .conteudo-principal .diferenciais {
-  background-image: url(../images/bg-01.png);
+  background-image: url(../images/bg-01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -216,7 +250,7 @@
 /* PLANTAS */
 
 .conteudo-principal .plantas {
-  background-image: url(../images/bg-02.png);
+  background-image: url(../images/bg-02.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -284,7 +318,7 @@
 /* EMPREENDIMENTO */
 
 .conteudo-principal .empreendimento {
-  background-image: url(../images/bg-01.png);
+  background-image: url(../images/bg-01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -351,6 +385,7 @@
   font-size: 2rem;
   transition: 0.1s ease-in-out;
 }
+
 .conteudo-principal .empreendimento .slider .btn:active {
   transform: scale(1.1);
   background-color: var(--amarelo-claro);
@@ -369,7 +404,7 @@
 /* EMPREENDIMENTO */
 
 .conteudo-principal .mapa {
-  background-image: url(../images/bg-02.png);
+  background-image: url(../images/bg-02.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
