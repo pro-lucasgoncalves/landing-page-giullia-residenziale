@@ -21,22 +21,22 @@
 
   /* CONTEÚDO-TEXTO */
 
-  .conteudo-principal .conteudo-texto {
+  .conteudo-principal .sobre {
     padding: 50px 0;
   }
 
-  .conteudo-principal .conteudo-texto .titulo,
-  .conteudo-principal .conteudo-texto .paragrafo {
+  .conteudo-principal .sobre .titulo,
+  .conteudo-principal .sobre .paragrafo {
     width: 100%;
     padding: 0 5%;
   }
 
-  .conteudo-principal .conteudo-texto .titulo {
+  .conteudo-principal .sobre .titulo {
     max-width: 700px;
     margin-bottom: 50px;
   }
 
-  .conteudo-principal .conteudo-texto .paragrafo {
+  .conteudo-principal .sobre .paragrafo {
     max-width: 830px;
     text-align: center;
   }
@@ -93,16 +93,21 @@
   .conteudo-principal .empreendimento .conteudo .texto {
     max-width: 778px;
     text-align: center;
+    padding: 0 25px;
   }
-    /* EMPREENDIMENTO */
+  /* EMPREENDIMENTO */
 }
 
 @media (max-width: 375px) {
+  /* HOME */
+
   .home .conteudo .informacoes .titulo {
     font-size: 3rem;
   }
 
-  .conteudo-principal .conteudo-texto .paragrafo {
+  /* HOME */
+
+  .conteudo-principal .sobre .paragrafo {
     font-size: 1.8rem;
   }
 

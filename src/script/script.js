@@ -15,8 +15,7 @@ let curSlide = 0;
 // maximum number of slides
 let maxSlide = slides.length - 1;
 
-// add event listener and navigation functionality
-nextSlide.addEventListener("click", function () {
+let proximo = function() {
   // check if current slide is the last and reset current slide
   if (curSlide === maxSlide) {
     curSlide = 0;
@@ -28,13 +27,11 @@ nextSlide.addEventListener("click", function () {
   slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
   });
-});
+}
 
-// select next slide button
-const prevSlide = document.querySelector(".btn-prev");
+const myTimeout = setInterval(proximo, 5000);
 
-// add event listener and navigation functionality
-prevSlide.addEventListener("click", function () {
+let anterior = function () {
   // check if current slide is the first and reset current slide to last
   if (curSlide === 0) {
     curSlide = maxSlide;
@@ -46,4 +43,13 @@ prevSlide.addEventListener("click", function () {
   slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
   });
-});
+}
+
+// add event listener and navigation functionality
+nextSlide.addEventListener("click", proximo);
+
+// select next slide button
+const prevSlide = document.querySelector(".btn-prev");
+
+// add event listener and navigation functionality
+prevSlide.addEventListener("click", anterior);
