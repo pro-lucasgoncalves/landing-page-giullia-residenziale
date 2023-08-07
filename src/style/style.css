@@ -1,5 +1,14 @@
 /* HEADER */
 
+h2 {
+  font-family: "MazzardH-Regular";
+  color: var(--amarelo-claro);
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .header .topo {
   position: fixed;
   bottom: 0;
@@ -62,10 +71,9 @@
   background-image: url(../images/bg-02.jpg);
   background-position: 250px;
   background-size: cover;
-
+  align-items: center;
   display: flex;
   flex-wrap: wrap-reverse;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -77,6 +85,10 @@
   width: 50%;
   padding: 0 4.4%;
   font-family: "MazzardH-Regular";
+}
+
+.home .conteudo .informacoes .giullia-logo {
+  margin-bottom: 50px;
 }
 
 .home .conteudo .informacoes .texto,
@@ -115,12 +127,9 @@
 }
 
 .conteudo-principal .sobre .titulo {
-  font-family: "Florence-Regular";
-  color: var(--amarelo-claro);
-  font-size: 3.5rem;
+  font-family: "Hearth-Stone";
+  font-size: 5rem;
   padding: 0 50px;
-  text-align: center;
-  line-height: 1.5;
 }
 
 .conteudo-principal .sobre .paragrafo {
@@ -180,7 +189,7 @@
 }
 
 .conteudo-principal .diferenciais .titulo {
-  font-family: "Florence-Regular";
+  font-family: "MazzardH-Regular";
   font-size: 3.5rem;
   color: var(--amarelo-claro);
   margin-bottom: 50px;
@@ -263,7 +272,7 @@
 
 .conteudo-principal .plantas .titulo {
   text-align: center;
-  font-family: "Florence-Regular";
+  font-family: "MazzardH-Regular";
   font-size: 3.5rem;
   color: var(--amarelo-claro);
 }
@@ -333,7 +342,7 @@
 
 .conteudo-principal .empreendimento .conteudo .titulo {
   text-align: center;
-  font-family: "Florence-Regular";
+  font-family: "MazzardH-Regular";
   font-size: 3.5rem;
   color: var(--amarelo-claro);
   padding-bottom: 25px;
@@ -488,10 +497,16 @@
   width: 175px;
 }
 
+.home .informacoes .redes-sociais,
 .rodape .redes-sociais {
   display: flex;
 }
 
+.home .informacoes .redes-sociais {
+  justify-content: center;
+}
+
+.home .informacoes .redes-sociais a,
 .rodape .redes-sociais a {
   display: flex;
   justify-content: center;
@@ -506,6 +521,7 @@
   font-size: 30px;
 }
 
+.home .informacoes .redes-sociais a:hover,
 .rodape .redes-sociais a:hover {
   background-color: var(--amarelo);
   color: var(--preto);
