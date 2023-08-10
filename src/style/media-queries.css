@@ -79,13 +79,37 @@
     top: 42%;
     padding: 2px 1px 0 0;
   }
-  
+
   .conteudo-principal .empreendimento .slider .btn-next {
     top: 42%;
     padding: 2px 0 0 1px;
   }
 
   /* EMPREENDIMENTO */
+
+  /* FORM */
+
+  .conteudo-principal .leads {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+
+  .leads .text-container,
+  .leads .form-container {
+    width: 100%;
+  }
+
+  .leads .text-container .title,
+  .leads .text-container .paragraph {
+    text-align: center;
+  }
+
+  .leads .text-container .paragraph {
+    max-width: 575px;
+    padding: 0 25px;
+  }
+
+  /* FORM */
 }
 
 @media (max-width: 1148px) {
@@ -152,27 +176,37 @@
 
 @media (max-width: 450px) {
   .conteudo-principal
-  .diferenciais
-  .topicos
-  .topico
-  .container-subtitulo
-  .icone {
-  width: 33px;
-}
+    .diferenciais
+    .topicos
+    .topico
+    .container-subtitulo
+    .icone {
+    width: 33px;
+  }
 
-.conteudo-principal
-  .diferenciais
-  .topicos
-  .topico
-  .container-subtitulo
-  .subtitulo {
-  letter-spacing: 2px;
-  font-size: 2rem;
-  font-weight: 400;
-}
-.conteudo-principal .diferenciais .topicos .topico .caixa-de-texto .texto {
-  font-size: 1.8rem;
-}
+  .conteudo-principal
+    .diferenciais
+    .topicos
+    .topico
+    .container-subtitulo
+    .subtitulo {
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .conteudo-principal .diferenciais .topicos .topico .caixa-de-texto .texto {
+    font-size: 1.8rem;
+  }
+
+  /* FORM */
+  
+  .leads .text-container .paragraph {
+    max-width: 375px;
+    font-size: 1.8rem;
+  }
+
+
+  /* FORM */
 }
 
 @media (max-width: 825px) {
