@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrigado! | Giullia Residenziale</title>
+
+    <link rel="stylesheet" href="src/style/reset.css" />
+    <link rel="stylesheet" href="src/style/variables.css" />
+    <link rel="stylesheet" href="src/style/font-face.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Obrigado!</h1>
+      <p>O formulário foi enviado com sucesso.</p>
+      <button type="button">
+        <a href="https://pro-lucasgoncalves.github.io/landing-page-giullia-residenziale/">Retorne ao site</a>
+      </button>
+    </main>
+
+    <style>
+      main {
+        background-image: url("src/images/bg-01.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        gap: 50px;
+      }
+      h1 {
+        font-family: "Hearth-Stone";
+        font-size: 6.6rem;
+        color: var(--amarelo);
+      }
+      p {
+        font-family: "MazzardH-Regular";
+        font-size: 3.5rem;
+        color: var(--branco);
+        margin-bottom: 60px;
+      }
+
+      button {
+        background: none;
+        border: none;
+      }
+
+      button a {
+        font-family: "MazzardH-Regular";
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 18px;
+        border: none;
+        background-color: var(--amarelo);
+        color: #ffffff;
+        padding: 32px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
+
+      button a:hover {
+        background-color: var(--amarelo-claro);
+        color: var(--preto);
+        border-color: var(--amarelo-claro);
+      }
+    </style>
+  </body>
+</html>

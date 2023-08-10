@@ -61,15 +61,15 @@
   border-radius: 15px;
   border: 2px solid var(--amarelo);
   background: none;
-  color: #535353;
+  color: #9a9a9a;
 }
 
-.form-container .form .input.accepted {
+/* .form-container .form .input.accepted {
   border: 1px solid #3ccc87;
-}
+} */
 
 .form-container .form .input.denied {
-  border: 1px solid #f52e2e;
+  border: 2px solid #f52e2e;
 }
 
 .form-container .form #message {
@@ -99,10 +99,10 @@
 
 .form-container .error {
   font-weight: 400;
-  font-size: 8px;
+  font-size: 10px;
   line-height: 9px;
   color: #f52e2e;
-  margin-bottom: 6px;
+  margin: 6px 10px 6px;
   cursor: default;
   opacity: 0;
 }

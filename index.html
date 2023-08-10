@@ -50,6 +50,7 @@
             <li><a href="#plantas">Plantas</a></li>
             <li><a href="#empreendimento">Empreendimento</a></li>
             <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -291,7 +292,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
-      <section class="leads">
+      <section class="leads" id="contato">
         <div class="text-container">
           <h2 class="title">FICOU COM DÚVIDA?<br />NOS MANDE UMA MENSAGEM!</h2>
           <p class="paragraph">
@@ -300,7 +301,7 @@
           </p>
         </div>
         <div class="form-container">
-          <form class="form" action="index.html" method="get">
+          <form class="form" action="https://formsubmit.co/pro.lucasgoncalves@gmail.com" method="POST">
             <input
               class="input"
               type="text"
@@ -329,7 +330,14 @@
             />
             <span class="error">campo obrigatório</span>
             <span class="info">*campos obrigatórios</span>
-            <input type="submit" id="submit" value="Enviar" />
+            <button type="submit" id="submit" value="Enviar" class="btn-submit" >Enviar</button>
+
+            <input type="hidden" name="_autoresponse" value="Obrigado! O formulário foi enviado com sucesso.">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_next" value="https://pro-lucasgoncalves.github.io/landing-page-giullia-residenziale/thankyou.html">
+            <input type="hidden" name="_subject" value="Novo cadastro - Giullia Residenziale">
+
           </form>
         </div>
       </section>
@@ -376,6 +384,7 @@
       <p class="copyright">© Todos os direitos reservados</p>
     </footer>
     <script src="src/script/carrossel.js"></script>
+    <script src="src/script/form.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
   </body>
 </html>
